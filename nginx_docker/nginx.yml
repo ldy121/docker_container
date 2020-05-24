@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  nginx:
+    image: docker_nginx
+    build:
+      context: .
+      dockerfile: dockerfile
+    network_mode: host
+    container_name: nginx
